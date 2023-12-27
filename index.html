@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box clicker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="buttonContainer">
+      <input id="intervalValue" type="text" value="3" />
+      <button onclick="startGame()">start</button>
+      <button onclick="pauseGame()">PAUSE</button>
+      <button onclick="resetGame()">RESET</button>
+    </header>
+    <section class="boxContainer" id="boxContainer">
+      <div class="simpleBox"></div>
+    </section>
+    <footer class="scoreContainer">
+      <div id="scoreTable">
+        <div id="scoreTableHead">
+          <div class="row">
+            <div class="count">click number</div>
+            <div class="time">click time</div>
+          </div>
+        </div>
+        <div id="scoreTableBody"></div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
